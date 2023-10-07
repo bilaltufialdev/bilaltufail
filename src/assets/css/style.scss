@@ -1,0 +1,404 @@
+@import "_variables";
+
+body {
+  background: $backgroundColor;
+  color: $textColor;
+  font-family: $fontStack;
+}
+
+// Navigation
+.navigation {
+  background: $backgroundColor !important;
+  .nav {
+    .nav-link {
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      color: $secondaryColor;
+      font-weight: 500;
+      outline: 0;
+      border: none;
+      &:hover {
+        color: $textColor !important;
+        transition: all 0.2s ease-in-out;
+        transform: translateZ(120%);
+      }
+    }
+  }
+
+  .btn__contact {
+    background: rgb(79, 183, 220);
+    background: linear-gradient(
+      40deg,
+      rgba(79, 183, 220, 1) 0%,
+      rgba(73, 70, 195, 1) 100%
+    );
+    outline: 0;
+    border: none;
+    font-weight: 600;
+    color: $textColor !important;
+    &:hover {
+      transition: all ease-in 0.2s;
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        80deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+    }
+  }
+}
+
+.navigation__mobile {
+  background: $backgroundColor !important;
+
+  .navbar-toggler {
+    background: $secondaryColor;
+    box-shadow: none;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+// Offcanvas Design
+.canvas__body {
+  background: rgb(79, 183, 220);
+  background: $gradientColor;
+  .canvas__nav {
+    a {
+      color: $textColor !important;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .btn {
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        40deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+      box-shadow: 0 0 5px $primaryColor;
+      font-weight: 600;
+    }
+  }
+}
+
+// Slider
+.slider__section {
+  background: url("../img/sliderbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: $mainFont;
+    letter-spacing: 5px;
+    font-size: 5rem;
+    span {
+      color: $secondaryColor;
+    }
+  }
+  .btn {
+    background: rgb(79, 183, 220);
+    background: linear-gradient(
+      40deg,
+      rgba(79, 183, 220, 1) 0%,
+      rgba(73, 70, 195, 1) 100%
+    );
+    outline: 0;
+    border: none;
+    box-shadow: 0 0 5px $primaryColor;
+    font-weight: 600;
+    &:hover {
+      transition: all ease-in 0.2s;
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        180deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+    }
+  }
+}
+
+// About Me
+.about__section {
+  .about__img {
+    // position: relative;
+    img {
+      // width: 300px;
+      // height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 5px $backgroundColor;
+    }
+    .border__div {
+      border: 8px solid $secondaryColor;
+      width: 280px;
+      height: 280px;
+      border-radius: 1rem;
+      // position: absolute;
+      left: 32%;
+      top: 7%;
+      z-index: -1;
+    }
+  }
+
+  .btn-hire {
+    width: 100%;
+    background: rgb(79, 183, 220);
+    background: linear-gradient(
+      40deg,
+      rgba(79, 183, 220, 1) 0%,
+      rgba(73, 70, 195, 1) 100%
+    );
+    outline: 0;
+    border: $primaryColor 3px solid;
+    font-weight: 600;
+    &:hover {
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        180deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+    }
+  }
+
+  .btn-resume {
+    width: 100%;
+    outline: 0;
+    font-weight: 600;
+    color: $secondaryColor;
+    border: 3px solid $secondaryColor;
+    &:hover {
+      background: $secondaryColor;
+      color: $primaryColor;
+    }
+  }
+}
+
+// Portfolio Section
+.portfolio__section {
+  h3 {
+    color: $secondaryColor;
+  }
+  .btn__preview {
+    width: auto;
+    background: rgb(79, 183, 220);
+    background: linear-gradient(
+      40deg,
+      rgba(79, 183, 220, 1) 0%,
+      rgba(73, 70, 195, 1) 100%
+    );
+    outline: 0;
+    border: none;
+    color: $textColor;
+    font-weight: 500;
+    &:hover {
+      transition: all ease-in 0.2s;
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        180deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+    }
+  }
+}
+
+// Services + Services Card
+.services__card {
+  height: 23rem;
+  background: $backgroundColor;
+  border: 8px solid $primaryColor;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h3 {
+      line-height: 32px;
+      text-transform: uppercase;
+    }
+    i {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+// Experience Section
+.experience__section {
+  img {
+    &:hover {
+      transition: all ease-in 0.2s;
+      transform: scale(110%);
+      cursor: pointer;
+    }
+  }
+}
+
+// Footer Section
+
+.footer__section {
+  background: rgb(79, 183, 220);
+  background: linear-gradient(
+    -45deg,
+    rgba(79, 183, 220, 1) 0%,
+    rgba(73, 70, 195, 1) 100%
+  );
+  border-radius: 4rem 4rem 0 0;
+  .contact__form {
+    background: rgb(79, 183, 220);
+    background: linear-gradient(
+      45deg,
+      rgba(79, 183, 220, 1) 0%,
+      rgba(73, 70, 195, 1) 100%
+    );
+    box-shadow: 0 0 15px $primaryColor;
+    border-radius: 20px;
+    form {
+      input,
+      button,
+      textarea {
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+        background: $backgroundColor;
+        color: $textColor;
+        font-weight: 600;
+        outline: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .footer__primary {
+    .contact__inner {
+      .contact__icon {
+        text-align: center;
+        padding: 0.8rem;
+        border-radius: 10px;
+        background: #4fb7dc;
+        box-shadow: inset 20px 20px 60px #439cbb, inset -20px -20px 60px #5bd2fd;
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .footer__secondary {
+    .img-fluid {
+      width: 100px;
+      height: auto;
+    }
+    .footer__socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .social__icon {
+        padding: 1rem;
+        border-radius: 10px;
+        background: #4fb7dc;
+        box-shadow: inset 20px 20px 60px #439cbb, inset -20px -20px 60px #5bd2fd;
+        a {
+          color: $textColor;
+          text-decoration: none;
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Settings
+@media (max-width: 576px) {
+  .footer__primary {
+    h3,
+    p {
+      text-align: center;
+    }
+  }
+
+  .footer__secondary {
+    text-align: center;
+  }
+  .about__section {
+    text-align: center;
+  }
+  .portfolio__section {
+    text-align: center;
+  }
+  .slider__section {
+    text-align: center;
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: $mainFont;
+      letter-spacing: 2px;
+      font-size: 3.5rem;
+      span {
+        color: $secondaryColor;
+      }
+    }
+    .btn {
+      background: rgb(79, 183, 220);
+      background: linear-gradient(
+        40deg,
+        rgba(79, 183, 220, 1) 0%,
+        rgba(73, 70, 195, 1) 100%
+      );
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .services__card {
+    height: auto;
+    width: auto;
+    .card-header {
+      h3 {
+        font-size: 1.5rem;
+      }
+      i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
+.btn__anime:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+.btn__anime2:hover {
+  animation: pulsate2 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px $secondaryColor, 0 0 50px $primaryColor;
+  }
+}
+
+@keyframes pulsate2 {
+  0% {
+    box-shadow: 0 0 25px $secondaryColor, 0 0 10px $primaryColor;
+  }
+}
