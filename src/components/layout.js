@@ -44,7 +44,7 @@ const Layout = ({ children, location }) => {
     }
 
     handleExternalLinks();
-  }, [isLoading]);
+  });
 
   return (
     <>
